@@ -611,6 +611,9 @@
   .gtab .g-ic{transition:transform .3s cubic-bezier(.2,1.6,.4,1)}
   @media (max-width:760px){ .part-tab{font-size:14px!important} .pt-ic{width:30px;height:30px;font-size:18px} }
 
+  .cap a.ext{color:#4338ca;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+  .ext-go{display:inline-block;margin-top:8px;font-weight:800;font-size:14.5px;color:#fff;background:#4338ca;border-radius:999px;padding:7px 16px;text-decoration:none;box-shadow:0 4px 12px rgba(67,56,202,.25)}
+  .ext-go:hover{background:#3730a3}
   /* ---------- 頁首區：左標題、右目錄 ---------- */
   .hero-split{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,1fr);gap:22px;align-items:center}
   .hero .nw{display:inline-block}
@@ -815,10 +818,10 @@
   </div>
 </header>
 <nav class="parts" role="tablist" aria-label="內容分頁">
-  <button class="part-tab" role="tab" id="tab-intro" data-part="intro" aria-controls="part-intro"><span class="pt-ic" style="--bg:#fef3c7" aria-hidden="true">🏠</span><span>總覽</span></button>
-  <button class="part-tab" role="tab" id="tab-design" data-part="design" aria-controls="part-design"><span class="pt-ic" style="--bg:#fce7f3" aria-hidden="true">🌸</span><span>SEL 班經</span></button>
-  <button class="part-tab" role="tab" id="tab-cards" data-part="cards" aria-controls="part-cards"><span class="pt-ic" style="--bg:#dbeafe" aria-hidden="true">📚</span><span>學科</span></button>
-  <button class="part-tab" role="tab" id="tab-publish" data-part="publish" aria-controls="part-publish"><span class="pt-ic" style="--bg:#dcfce7" aria-hidden="true">🚀</span><span>發布</span></button>
+  <button class="part-tab" role="tab" id="tab-intro" data-part="intro" aria-controls="part-intro"><span class="pt-ic" style="--bg:#fef3c7" aria-hidden="true">🏠</span><span>認識工作坊</span></button>
+  <button class="part-tab" role="tab" id="tab-design" data-part="design" aria-controls="part-design"><span class="pt-ic" style="--bg:#fce7f3" aria-hidden="true">🌸</span><span>SEL 班經 APP 實作</span></button>
+  <button class="part-tab" role="tab" id="tab-cards" data-part="cards" aria-controls="part-cards"><span class="pt-ic" style="--bg:#dbeafe" aria-hidden="true">📚</span><span>學科領域 APP 實作</span></button>
+  <button class="part-tab" role="tab" id="tab-publish" data-part="publish" aria-controls="part-publish"><span class="pt-ic" style="--bg:#dcfce7" aria-hidden="true">🚀</span><span>生成與發布 APP</span></button>
 </nav>
 
 
@@ -1259,7 +1262,7 @@
           <div class="m-top"><span class="m-logo nb">◠</span><b>未命名筆記本</b><span class="m-sp"></span><span class="m-btn hl">＋ 建立筆記本</span><span class="m-btn">共用</span></div>
           <div class="m-3col"><div class="m-col"><i>來源</i></div><div class="m-col"><i>對話</i></div><div class="m-col"><i>工作室</i></div></div>
         </div>
-        <div class="cap"><h4>打開新的筆記本</h4><p>開啟 Gemini Notebook，按右上角的「＋ 建立筆記本」，替筆記本取一個名字，例如「平行四邊形面積剪拼教具」。</p></div>
+        <div class="cap"><h4>打開新的筆記本</h4><p>開啟 <a class="ext" href="https://notebooklm.google.com/" target="_blank" rel="noopener">Gemini Notebook</a>，按右上角的「＋ 建立筆記本」，替筆記本取一個名字，例如「平行四邊形面積剪拼教具」。</p><a class="ext-go" href="https://notebooklm.google.com/" target="_blank" rel="noopener">↗ 打開 Gemini Notebook</a></div>
       </div>
       <div class="farrow">↓</div>
       <div class="fstep">
@@ -1332,7 +1335,7 @@
             <div class="m-prompt">問問 Gemini<div class="m-tools"><span class="hl-soft">＋</span><span class="m-menu"><span>上傳檔案</span><span class="hl">Canvas</span><span>Deep Research</span></span></div></div>
           </div>
         </div>
-        <div class="cap"><h4>開啟 Gemini，選擇「Canvas」</h4><p>前往 gemini.google.com 並登入。在下方輸入框按「＋」（新增檔案），選擇「Canvas」。</p></div>
+        <div class="cap"><h4>開啟 Gemini，選擇「Canvas」</h4><p>前往 <a class="ext" href="https://gemini.google.com/" target="_blank" rel="noopener">gemini.google.com</a> 並登入。在下方輸入框按「＋」（新增檔案），選擇「Canvas」。</p><a class="ext-go" href="https://gemini.google.com/" target="_blank" rel="noopener">↗ 打開 Gemini</a></div>
       </div>
       <div class="farrow">↓</div>
       <div class="fstep">
@@ -1378,7 +1381,7 @@
             <div class="m-prompt hl">【角色與背景】你是一位熟悉互動網頁開發與……<div class="m-tools"><span>＋</span><b class="m-send cl">↑</b></div></div>
           </div>
         </div>
-        <div class="cap"><h4>開新對話，貼上修改好的指令</h4><p>前往 claude.ai 並登入，開一個新對話。回到本網站按「📋 複製完整指令」，貼進輸入框後送出。需要題庫檔時，按「＋」一起上傳。</p></div>
+        <div class="cap"><h4>開新對話，貼上修改好的指令</h4><p>前往 <a class="ext" href="https://claude.ai/new" target="_blank" rel="noopener">claude.ai</a> 並登入，開一個新對話。回到本網站按「📋 複製完整指令」，貼進輸入框後送出。需要題庫檔時，按「＋」一起上傳。</p><a class="ext-go" href="https://claude.ai/new" target="_blank" rel="noopener">↗ 打開 Claude</a></div>
       </div>
       <div class="farrow">↓</div>
       <div class="fstep">
@@ -1473,7 +1476,7 @@
         <p class="m-sub">建立新協作平台</p>
         <div class="m-tpls"><span class="hl"><i>＋</i>空白</span><span><i>▦</i>範本 A</span><span><i>▦</i>範本 B</span><span><i>▦</i>範本 C</span></div>
       </div>
-      <div class="cap"><h4>建立一個新的協作平台</h4><p>用學校的 Google 帳號開啟 <b>sites.google.com</b>，按「建立新協作平台」下方的「＋ 空白」。左上角可以替網站取名字，例如「五年級數學教具」。</p></div>
+      <div class="cap"><h4>建立一個新的協作平台</h4><p>用學校的 Google 帳號開啟 <a class="ext" href="https://sites.google.com/new" target="_blank" rel="noopener">sites.google.com</a>，按「建立新協作平台」下方的「＋ 空白」。左上角可以替網站取名字，例如「五年級數學教具」。</p><a class="ext-go" href="https://sites.google.com/new" target="_blank" rel="noopener">↗ 打開 Google 協作平台</a></div>
     </div>
     <div class="farrow">↓</div>
     <div class="fstep">
